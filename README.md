@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/github-user-search-app-UnJYWy738D)
-- Live Site URL: [GitHub Page](https://untalpeluca.github.io/GitHubUserSearchApp/)
+- Solution URL: [Frontend Mentor]()
+- Live Site URL: [GitHub Page](https://waiyankyaw961999.github.io/GithubDev-Finder/)
 
 ## My process
 
@@ -46,4 +46,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@UnTalPeluca](https://www.frontendmentor.io/profile/untalpeluca)
+- Frontend Mentor -
