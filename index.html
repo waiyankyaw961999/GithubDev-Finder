@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | GitHub user search app</title>
+  <link rel="stylesheet" href="./assets/scss/style.css">
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="title flex flex-justify-between flex-items-center">
+        <div>
+          <h1>devfinder</h1>
+        </div>
+        <div class="toggle-icon">
+          <div class="flex flex-justify-between flex-items-center">
+            <div class="mr-1">
+              <h3 class="text-sm">LIGHT</h3>
+            </div>
+            <img class="icon-toggle" src="./assets/icon-moon.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="search flex">
+        <div class="flex flex-col flex-col-justify-between">
+          <img class="search-icon" src="./assets/icon-search.svg">
+        </div>
+
+        <form class="flex flex-justify-between" action="GET">
+          <input name="search" type="text" placeholder="Search Github username...">
+          <button class="search-btn" type="submit">Search</button>
+        </form>
+      </div>
+
+      <div class="profile-card grid">
+        <div class="avatar">
+          <img class="github-icon" src="https://avatars.githubusercontent.com/u/583231?v=4" alt="">
+        </div>
+
+        <div class="profile-info flex">
+          <h1 class="profile-name text-md">The Octocat</h1>
+          <p class="profile-link">
+            <a href="#">@octocat</a>
+          </p>
+          <h3 class="text-sm profile-created">Joined 25 Jan 2021</h3>
+
+
+        </div>
+
+        <div class="profile-bio">
+          <h3 class="text-sm disabled">This profile has no bio.</h3>
+        </div>
+
+        <div class="profile-status flex flex-justify-evenly flex-items-center">
+          <div>
+            <h3 class="profile-repo text-sm">Repos</h3>
+            <h1>8</h1>
+          </div>
+          <div>
+            <h3 class="profile-follower text-sm">Followers</h3>
+            <h1>3947</h1>
+          </div>
+          <div>
+            <h3 class="profile-following text-sm">Following</h3>
+            <h1>9</h1>
+          </div>
+        </div>
+
+        <div class="profile-extra flex flex-justify-between flex-items-center">
+          <div class="location flex">
+            <img src="./assets/icon-location.svg">
+            <h3 class="text-sm">San Francisco</h3>
+          </div>
+          <div class="available flex">
+            <img src="./assets/icon-twitter.svg">
+            <h3 class="text-sm disabled">Not available</h3>
+          </div>
+
+          <div class="blog flex">
+            <img src="./assets/icon-website.svg">
+            <h3 class="text-sm"><a href="#">https://github.blog</a></h3>
+          </div>
+          <div class="github flex">
+            <img src="./assets/icon-company.svg">
+            <h3 class="text-sm">@github</h3>
+          </div>
+        </div>
+      </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
