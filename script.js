@@ -53,6 +53,7 @@ async function getGithubUser(user) {
       .then((data) => user_info(data));
   } catch (error) {
     console.error(error);
+    alert("No User Found");
   }
 }
 
