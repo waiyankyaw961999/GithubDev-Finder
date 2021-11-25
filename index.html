@@ -19,14 +19,14 @@
     <div class="container">
       <div class="title flex flex-justify-between flex-items-center">
         <div>
-          <h1>devfinder</h1>
+          <h1 class="devfinder">devfinder</h1>
         </div>
         <div class="toggle-icon">
           <div class="flex flex-justify-between flex-items-center">
             <div class="mr-1">
-              <h3 class="text-sm">LIGHT</h3>
+              <h3 class="toggle-status text-sm">DARK</h3>
             </div>
-            <img class="icon-toggle" src="./assets/icon-moon.svg" alt="">
+            <img onclick="changeTheme()" class="icon-toggle" src="./assets/icon-moon.svg" alt="">
           </div>
         </div>
       </div>
@@ -36,8 +36,8 @@
           <img class="search-icon" src="./assets/icon-search.svg">
         </div>
 
-        <form class="flex flex-justify-between" action="GET">
-          <input name="search" type="text" placeholder="Search Github username...">
+        <form autocomplete="off" action="/" method="get" class="flex flex-justify-between" id="search">
+          <input id="user" name="user" type="text" placeholder="Search Github username..." value="" required>
           <button class="search-btn" type="submit">Search</button>
         </form>
       </div>
@@ -58,30 +58,30 @@
         </div>
 
         <div class="profile-bio">
-          <h3 class="text-sm disabled">This profile has no bio.</h3>
+          <h3 class="text-sm disabled bio">This profile has no bio.</h3>
         </div>
 
         <div class="profile-status flex flex-justify-evenly flex-items-center">
           <div>
             <h3 class="profile-repo text-sm">Repos</h3>
-            <h1>8</h1>
+            <h1 class="repo">8</h1>
           </div>
           <div>
             <h3 class="profile-follower text-sm">Followers</h3>
-            <h1>3947</h1>
+            <h1 class="follower">3947</h1>
           </div>
           <div>
             <h3 class="profile-following text-sm">Following</h3>
-            <h1>9</h1>
+            <h1 class="following">9</h1>
           </div>
         </div>
 
         <div class="profile-extra flex flex-justify-between flex-items-center">
           <div class="location flex">
-            <img src="./assets/icon-location.svg">
+            <img src="./assets/icon-location.svg" width="17px">
             <h3 class="text-sm">San Francisco</h3>
           </div>
-          <div class="available flex">
+          <div class="twitter flex">
             <img src="./assets/icon-twitter.svg">
             <h3 class="text-sm disabled">Not available</h3>
           </div>
@@ -90,14 +90,14 @@
             <img src="./assets/icon-website.svg">
             <h3 class="text-sm"><a href="#">https://github.blog</a></h3>
           </div>
-          <div class="github flex">
+          <div class="company flex">
             <img src="./assets/icon-company.svg">
             <h3 class="text-sm">@github</h3>
           </div>
         </div>
       </div>
   </main>
-  <script src="script.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

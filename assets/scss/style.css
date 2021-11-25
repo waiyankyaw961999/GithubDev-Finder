@@ -187,10 +187,17 @@ main {
 
 .search button {
   background-color: #0079ff;
+  color: #f6f8ff;
   border: 0;
   width: 10rem;
   font-size: 1rem;
   border-radius: 0.9rem;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.search button:hover {
+  opacity: 1;
 }
 
 .profile-card {
@@ -326,6 +333,9 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media (max-width: 52.625em) {
@@ -350,8 +360,8 @@ main {
 }
 
 .profile-extra img {
-  margin-right: 1.25rem;
-  width: auto !important;
-  height: auto;
+  margin-right: 1.3rem;
+  width: 1rem !important;
+  height: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
